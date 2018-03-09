@@ -2,12 +2,12 @@
 
 html {
     font-size: 18px;
-    line-height: 1.4;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
-    background-color: white;
-    font-family: Helvetica, sans-serif;
+    line-height: 1.4;
 }
 
 .container {
@@ -18,6 +18,13 @@ body {
 .flex {
     display: flex;
 }
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
 
 /* header banner */
 header {
@@ -33,13 +40,16 @@ header .flex {
     justify-content: flex-end;
 }
 
+.short-menu {
+    display: none;
+}
+
 /* nav menu */
 nav {
     align-items: center;
     color: white;
     background-color: cadetblue;
     display: flex;
-    font-size: 1rem;
     justify-content: space-between;
     padding: 1rem 0;
 }
@@ -48,21 +58,19 @@ nav img {
     height: 1.5rem;
     padding-left: 2rem;
     padding-right: 1rem;
-    width: auto;
-}
+ }
 
-#navigation {
+nav div {
     align-items: center;
     display: flex;  
 }
 
-#navigation ul {
+nav ul {
     margin-right: 1rem;
 }
 
-#navigation li {
+nav li {
     display: inline;
-    list-style: none;
     padding: 0 1rem;
 }
 
@@ -82,9 +90,7 @@ nav img {
 /* services */
 #services {
     padding: 3rem 0;
-}
-
-#services .flex {
+    display: flex;
     justify-content: center;
 }
 
@@ -100,15 +106,18 @@ nav img {
 }
 
 .service-box img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+#paper.service-box img {
     width: 3.5rem;
 }
 
 /* info section */
 #info {
     margin-bottom: 5rem;
-}
-
-#info .flex {
+    display: flex;
     justify-content: center;
 }
 
@@ -145,10 +154,11 @@ footer img {
 }
 
 /* Tablet specific css */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .container {
         max-width: 100%
     }
+    
     header {
         height: 22rem;
         padding-top: 0px;
@@ -156,12 +166,106 @@ footer img {
     
     header nav.container {
         margin: 0px;
+        width: 100%;
     }
     
     #slogan {
-        font-size: 1.33rem;
         margin-right: 2rem;
         margin-top: 5rem;
         padding: 0.75 rem 4rem;
+    }
+    
+    #slogan h1 {
+        font-size: 1.33rem;
+
+    }
+}
+
+@media only screen and (max-width: 648px) {
+   .container {
+        max-width: 100%
+    }
+    
+    header {
+        height: 17rem;
+        padding-top: 0px;
+        background-position: 20%;
+    }
+    
+    header span {
+        display: none;
+    }
+
+    .menu ul {
+        display: none; 
+    }
+
+    .menu ul.short-menu {
+        display: block;
+    }
+
+    #slogan {
+        font-size: 1rem;
+        margin: 9rem 0px 0px 0px;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #slogan h1 {    
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    #services {
+        display: flex;
+        padding-top: 3.77rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    
+    .service-box {
+        margin: 0.77rem;
+        font-size: 0.77rem;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 1.54rem;
+    }
+    
+    #info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+    .info-box {
+        flex-direction: column;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .info-header {
+        text-align: center;    
+    }
+    
+    footer span {
+        display: none;
+    }
+    
+    footer img {
+      display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .info-content {
+        font-size: 0.77rem;
+        margin-bottom: 4rem;
+    }
+
+    #spacebetween {
+        display: none;
     }
 }
