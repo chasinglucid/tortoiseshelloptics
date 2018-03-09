@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-    max-width: 960px;
     margin: auto;
+    max-width: 960px;
 }
 
 .flex {
@@ -35,13 +35,13 @@ header .flex {
 
 /* nav menu */
 nav {
-    font-size: 1rem;
+    align-items: center;
     color: white;
     background-color: cadetblue;
-    padding: 1rem 0;
     display: flex;
-    align-items: center;
+    font-size: 1rem;
     justify-content: space-between;
+    padding: 1rem 0;
 }
 
 nav img {
@@ -52,9 +52,10 @@ nav img {
 }
 
 #navigation {
-    display: flex;  
     align-items: center;
+    display: flex;  
 }
+
 #navigation ul {
     margin-right: 1rem;
 }
@@ -69,13 +70,13 @@ nav img {
 #slogan {
     background-color: white;
     color: black;
+    display: inline-block;
+    font-weight: bold;
     font-size: 2rem;
     line-height: 1.2;
-    font-weight: bold;
-    padding: 1.5rem 5rem;
-    margin-top: 10rem;
     margin-right: -2rem;
-   display: inline-block;
+    margin-top: 10rem;
+    padding: 1.5rem 5rem;
 }
 
 /* services */
@@ -88,14 +89,14 @@ nav img {
 }
 
 .service-box {
-    width: 5rem;
-    height: 8rem;
-    margin: 0 3rem;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 8rem;
     justify-content: space-between;
+    margin: 0 3rem;
     text-align: center;
-    align-items: center;
+    width: 5rem;
 }
 
 .service-box img {
@@ -116,14 +117,29 @@ nav img {
 }
 
 .info-header {
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 1rem;
     background-color: cadetblue;
     color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
     padding: 0.5rem 1.25rem;
 }
 
 #spacebetween {
     width: 5%;
+}
+
+/* footer/copyright */
+footer .container {
+    background-color: azure;
+    padding: 4rem;
+}
+
+footer .flex {
+    align-items: center;
+}
+
+footer img {
+    height: 1.5rem;
+    margin-right: 1rem;
 }
