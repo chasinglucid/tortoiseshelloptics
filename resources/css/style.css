@@ -33,6 +33,7 @@ header .flex {
     justify-content: flex-end;
 }
 
+/* nav menu */
 nav {
     font-size: 1rem;
     color: white;
@@ -64,6 +65,7 @@ nav img {
     padding: 0 1rem;
 }
 
+/* slogan box */
 #slogan {
     background-color: white;
     color: black;
@@ -75,3 +77,28 @@ nav img {
     margin-right: -2rem;
    display: inline-block;
 }
+
+/* services */
+#services {
+    padding: 3rem 0;
+}
+
+#services .flex {
+    justify-content: center;
+}
+
+.service-box {
+    width: 5rem;
+    height: 8rem;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.service-box img {
+    width: 3.5rem;
+}
+
